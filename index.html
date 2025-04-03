@@ -1,59 +1,131 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <link rel="stylesheet" href="style.css" />
-  
-  <title>Frontend Mentor | Article preview component</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-    <main>
-        <section class="image-section">
-            <img src="images/drawers.jpg" alt="drawers" />
-        </section>
-        <section class="description-section">
-            <h2>
-                Shift the overall look and feel by adding these wonderful touches to furniture in your home
-            </h2>
-            <p>
-                Ever been in a room and felt like something was missing? Perhaps 
-                it felt slightly bare and uninviting. I’ve got some simple tips 
-                to help you make any room feel complete.
-            </p>
+		<link rel="stylesheet" href="style.css" />
 
-        <footer class="card-footer">
-            <div class="avatar-description">
-                <img src="images/avatar-michelle.jpg" alt="avatar" id="avatar">
-                <p>
-                    <span class="avatar-name">
-                        Michelle Appleton
-                    </span>
-                    <span>
-                        28 Jun 2020
-                    </span>
-                </p>
-            </div>
+		<title>Frontend Mentor | Article preview component</title>
+	</head>
+	<body>
+		<main>
+			<section class="image-section">
+				<img src="images/drawers.jpg" alt="drawers" />
+			</section>
+			<section class="description-section">
+				<h2>
+					Shift the overall look and feel by adding these wonderful touches to
+					furniture in your home
+				</h2>
+				<p>
+					Ever been in a room and felt like something was missing? Perhaps it
+					felt slightly bare and uninviting. I’ve got some simple tips to help
+					you make any room feel complete.
+				</p>
 
-            <div share icon>
-                <img src="images/icon-share.svg" alt="share icon" id="share-icon" />
-            </div>
-        </footer>
-        </section>
+				<footer>
+					<div id="desktop-shared-footer" style="display: none">
+						<div class="rectangle">
+							<ul>
+								<li>
+									<p>Share</p>
+								</li>
 
-    </main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+								<li class="icon">
+									<a href="facebook">
+										<img src="images/icon-facebook.svg" alt="facebook icon" />
+									</a>
+								</li>
+
+								<li class="icon">
+									<a href="twitter">
+										<img src="images/icon-twitter.svg" alt="twitter icon" />
+									</a>
+								</li>
+
+								<li class="icon">
+									<a href="pinterest">
+										<img src="images/icon-pinterest.svg" alt="pinterest icon" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="angle"></div>
+					</div>
+
+					<div class="card-footer">
+						<div class="avatar-description" id="default-footer">
+							<img src="images/avatar-michelle.jpg" alt="avatar" id="avatar" />
+							<p>
+								<span class="avatar-name"> Michelle Appleton </span>
+								<span> 28 Jun 2020 </span>
+							</p>
+
+							<button class="toggle-icon default-footer-button">
+								<img
+									src="images/icon-share.svg"
+									alt="share icon"
+									id="share-icon"
+								/>
+							</button>
+						</div>
+
+						<div class="active-state" id="shared-footer">
+							<button class="toggle-icon">
+								<img
+									src="images/icon-share.svg"
+									alt="share icon"
+									id="share-icon"
+								/>
+							</button>
+
+							<ul>
+								<li>
+									<p>Share</p>
+								</li>
+
+								<li class="icon">
+									<a href="facebook">
+										<img src="images/icon-facebook.svg" alt="facebook icon" />
+									</a>
+								</li>
+
+								<li class="icon">
+									<a href="twitter">
+										<img src="images/icon-twitter.svg" alt="twitter icon" />
+									</a>
+								</li>
+
+								<li class="icon">
+									<a href="pinterest">
+										<img src="images/icon-pinterest.svg" alt="pinterest icon" />
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</footer>
+			</section>
+		</main>
+
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Estee_Jay</a>.
+		</div>
+
+		<script src="script.js"></script>
+	</body>
 </html>
