@@ -72,11 +72,11 @@ div.avatar-description {
 }
 
 #default-footer {
-	width: 65%;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: -1rem;
 }
 
 div #avatar {
